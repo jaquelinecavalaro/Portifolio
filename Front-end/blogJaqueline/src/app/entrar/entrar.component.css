@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+#img-bg{
+    background-image: url('../../assets/img/backgroundenter.jpg');
+    min-height: 695px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.btn-outline-success{
+    background-color: white;
+    border-color: #a63fbd;
+    color: #a63fbd;
+}
+.btn-outline-success:hover{
+    background-color: #a63fbd;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42);
+box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42);
+}
+.menu{
+    background-color: #141414;
+}
+.titleFont{
+
+    font-size: 30;
+    font-family: 'Architects Daughter';
+
+}
+.colorFont{
+    color:aliceblue;
+}
+
+.textofont{
+  font-family: 'Architects Daughter';
+}
+
+hr{
+    border-color: aliceblue;
+}
+.cadatrese{
+    color: #8365bb;
+}
+.cadatrese:hover{
+    color: #a63fbd;
+}
+.corLetrasRodaPe{
+  color: rgb(217, 161, 255);
+  size: 3em;
+}
+.iconLetra:hover{
+color: #cc71e6;
+}
+
+.tamanhotexto
+{
+  font-size: 1.5em;
+}
