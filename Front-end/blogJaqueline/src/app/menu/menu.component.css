@@ -4,11 +4,25 @@ body{
     background-color: #141414;
 }
 .bannerFont{
+
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  transform: translateY(-50%);
+  /*width: 100%;*/
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 30;
+  z-index: 10000;
+  pointer-events: none;
+
+/*    position: absolute;
     font:bold;
     font-size: 30;
     color: #cc71e6;
     font-family: 'Press Start 2P', sans-serif;
-    margin-top: 50px;
+    margin-top: 50px;*/
 }
 .iconeFont{
     color:aliceblue;
@@ -19,18 +33,168 @@ body{
 .menu{
     background-color: #141414;
 }
+.partetras{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background: #000;
+    overflow: hidden;
+}
 .corLetras{
    color: aliceblue;
 }
 .shadowNav{
-    -webkit-box-shadow: 5px 5px 48px 1px #26152A; 
+    -webkit-box-shadow: 5px 5px 48px 1px #26152A;
     box-shadow: 5px 5px 48px 1px #26152A;
 }
 .iconLetra:hover{
     color: #cc71e6;
 }
 .titleFont{
+    position: absolute;
     color: #cc71e6;
     font-family: 'VT323', monospace;
     font-size: 30;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+/*teste*/
+
+.lux1
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    filter: url(#gooey);
+}
+.lux1 .circle
+{
+    position: relative;
+    min-width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+.lux1 .circle:before
+{
+    content:  '';
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    right: -150px;
+    bottom: -150px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+    filter:blur(50px);
+}
+.lux1 .circle.circle1, /*bola1*/
+.lux1 .circle.circle1:before
+{
+    background: linear-gradient(90deg, rgb(234, 0, 255), #0ff);
+}
+.lux1 .circle.circle2, /*bola2*/
+.lux1 .circle.circle2:before
+{
+    background: linear-gradient(90deg, rgb(0, 238, 255), rgb(234, 0, 255));
+}
+.lux1 .circle.circle1
+{
+    animation: animate1 10s linear infinite;
+}
+@keyframes animate1 /*bola1*/
+{
+        0%
+        {
+            transform: translateX(0) rotate(0);
+        }
+        25%
+        {
+            transform: translateX(500px) rotate(240deg);
+        }
+        50%{
+            transform: translateX(250px) rotate(240deg);
+        }
+        75%
+        {
+            transform: translateX(500px) rotate(240deg);
+        }
+        100%
+        {
+            transform: translateX(0) rotate(0);
+        }
+}
+
+.lux1 .circle.circle2
+{
+    animation: animate2 10s linear infinite;
+}
+@keyframes animate2 /*bola2*/
+{
+    0%
+    {
+        transform: translateX(0) rotate(0);
+    }
+    25%
+    {
+        transform: translateX(-500px) rotate(-240deg);
+    }
+    50%{
+        transform: translateX(-250px) rotate(-240deg);
+    }
+    75%
+    {
+        transform: translateX(-500px) rotate(-240deg);
+    }
+    100%
+    {
+        transform: translateX(0) rotate(0);
+    }
+}
+svg{
+    width: 0;
+    height: 0;
+}
+.fontetitulo1{
+    position: absolute;
+    top: 20%;
+    left: 150px;
+    transform: translateY(-50%);
+    /*width: 100%;*/
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 30;
+    z-index: 10000;
+    pointer-events: none;
+}
+.subtitulo{
+    /*width: 100%;*/
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 60%;
+    pointer-events: none;
+}
+
+.img1
+{
+
+  position: absolute;
+	left: 1000px; /* posiciona a 90px para a esquerda */
+	top: 10px; /* posiciona a 70px para baixo */
+
+  height: 40%;
+  /*top: 10%;
+  left: 20;
+  transform: translateY(-170%);
+  margin-left: 200px;
+    margin-right: 200px;
+
+  /*width: 100%;*/
+  text-align: center;
+  z-index: 10000;
+  pointer-events: none;
 }
